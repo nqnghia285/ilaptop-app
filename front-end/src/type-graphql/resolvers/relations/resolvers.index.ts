@@ -1,0 +1,10 @@
+export { CommentRelationsResolver } from "./Comment/CommentRelationsResolver";
+export { CustomerRelationsResolver } from "./Customer/CustomerRelationsResolver";
+export { DiscountRelationsResolver } from "./Discount/DiscountRelationsResolver";
+export { LaptopRelationsResolver } from "./Laptop/LaptopRelationsResolver";
+export { PassageRelationsResolver } from "./Passage/PassageRelationsResolver";
+export { PersonRelationsResolver } from "./Person/PersonRelationsResolver";
+export { PostRelationsResolver } from "./Post/PostRelationsResolver";
+export { PriceMapRelationsResolver } from "./PriceMap/PriceMapRelationsResolver";
+export { PurchaseRelationsResolver } from "./Purchase/PurchaseRelationsResolver";
+export { UserRelationsResolver } from "./User/UserRelationsResolver";

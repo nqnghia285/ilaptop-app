@@ -1,0 +1,12 @@
+export { AggregateLaptopArgs } from "./AggregateLaptopArgs";
+export { CreateLaptopArgs } from "./CreateLaptopArgs";
+export { CreateManyLaptopArgs } from "./CreateManyLaptopArgs";
+export { DeleteLaptopArgs } from "./DeleteLaptopArgs";
+export { DeleteManyLaptopArgs } from "./DeleteManyLaptopArgs";
+export { FindFirstLaptopArgs } from "./FindFirstLaptopArgs";
+export { FindManyLaptopArgs } from "./FindManyLaptopArgs";
+export { FindUniqueLaptopArgs } from "./FindUniqueLaptopArgs";
+export { GroupByLaptopArgs } from "./GroupByLaptopArgs";
+export { UpdateLaptopArgs } from "./UpdateLaptopArgs";
+export { UpdateManyLaptopArgs } from "./UpdateManyLaptopArgs";
+export { UpsertLaptopArgs } from "./UpsertLaptopArgs";

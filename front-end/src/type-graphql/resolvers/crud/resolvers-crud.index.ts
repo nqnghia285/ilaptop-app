@@ -1,0 +1,10 @@
+export { CommentCrudResolver } from "./Comment/CommentCrudResolver";
+export { CustomerCrudResolver } from "./Customer/CustomerCrudResolver";
+export { DiscountCrudResolver } from "./Discount/DiscountCrudResolver";
+export { LaptopCrudResolver } from "./Laptop/LaptopCrudResolver";
+export { PassageCrudResolver } from "./Passage/PassageCrudResolver";
+export { PersonCrudResolver } from "./Person/PersonCrudResolver";
+export { PostCrudResolver } from "./Post/PostCrudResolver";
+export { PriceMapCrudResolver } from "./PriceMap/PriceMapCrudResolver";
+export { PurchaseCrudResolver } from "./Purchase/PurchaseCrudResolver";
+export { UserCrudResolver } from "./User/UserCrudResolver";

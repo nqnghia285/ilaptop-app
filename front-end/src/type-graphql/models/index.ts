@@ -1,0 +1,10 @@
+export { Comment } from "./Comment";
+export { Customer } from "./Customer";
+export { Discount } from "./Discount";
+export { Laptop } from "./Laptop";
+export { Passage } from "./Passage";
+export { Person } from "./Person";
+export { Post } from "./Post";
+export { PriceMap } from "./PriceMap";
+export { Purchase } from "./Purchase";
+export { User } from "./User";
