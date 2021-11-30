@@ -40,3 +40,4 @@ lerna-debug.log*
 /src/prisma/data
 yarn.lock
 /public
+/src/graphql/schema.gql
