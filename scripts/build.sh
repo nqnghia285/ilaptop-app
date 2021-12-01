@@ -1,3 +1,3 @@
-yarn prebuild:be
-yarn build:fe
-yarn build:be
+cd back-end/
+yarn build:fe:copy
+yarn build
