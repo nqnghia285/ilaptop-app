@@ -7,10 +7,10 @@
    "license": "UNLICENSED",
    "scripts": {
       "prebuild": "rimraf dist",
-      "build:fe": "cd ../front-end && rm -rf build/* && yarn build",
-      "build:fe:copy": "cd ../front-end && rm -rf build && yarn build && rm -rf ../back-end/public/* && cp -a build/* ../back-end/public",
+      "build:fe": "cd ../front-end && rm -rf build && yarn build && cd ../back-end",
+      "build:fe:copy": "cd ../front-end && rm -rf build && yarn build && rm -rf ../back-end/public && cp -a build/* ../back-end/public && cd ../back-end",
       "build": "nest build",
-      "copy:fe": "rm -rf public/* && cd ../front-end && cp -a build/* ../back-end/public",
+      "copy:fe": "rm -rf public && cp -a ../front-end/build/* public",
       "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
       "start": "nest start",
       "start:dev:g": "yarn generate && nest start --watch",
@@ -32,6 +32,7 @@
       "mv:type-graphql:to:fe": "yarn clear:type-graphql:fe && yarn copy:type-graphql:to:fe && yarn clear:generated",
       "generate:fe": "yarn clear:generated && prisma generate && yarn mv:type-graphql:to:fe && yarn clear:.prisma:fe && yarn copy:.prisma:to:fe",
       "migrate": "prisma migrate dev --skip-generate --name init",
+      "migrate:g": "prisma migrate dev --name init",
       "seed": "prisma db seed",
       "reset-db": "prisma migrate reset"
    },
