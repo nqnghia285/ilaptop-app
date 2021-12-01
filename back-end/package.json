@@ -31,8 +31,11 @@
       "copy:.prisma:to:fe": "cp -a node_modules/.prisma ../front-end/node_modules",
       "mv:type-graphql:to:fe": "yarn clear:type-graphql:fe && yarn copy:type-graphql:to:fe && yarn clear:generated",
       "generate:fe": "yarn clear:generated && prisma generate && yarn mv:type-graphql:to:fe && yarn clear:.prisma:fe && yarn copy:.prisma:to:fe",
-      "migrate": "prisma migrate dev --skip-generate --name init",
-      "migrate:g": "prisma migrate dev --name init",
+      "migrate:dev": "prisma migrate dev --skip-generate --name init",
+      "migrate:dev:g": "prisma migrate dev --name init --preview-feature",
+      "migrate:reset": "prisma migrate reset --preview-feature",
+      "migrate:deploy": "prisma migrate deploy --preview-feature",
+      "migrate:resolve": "prisma migrate resolve --preview-feature",
       "seed": "prisma db seed",
       "reset-db": "prisma migrate reset"
    },
