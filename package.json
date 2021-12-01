@@ -8,7 +8,7 @@
       "heroku-prebuild": "cd front-end && yarn install --prod=false && cd ../back-end && yarn install --prod=false",
       "deploy": "sh ./deploy.sh",
       "prebuild:be": "cd back-end && yarn migrate:deploy && yarn generate && yarn copy:.prisma:to:fe",
-      "build:fe": "cd back-end && yarn build:fe:copy",
+      "build:fe": "cd back-end && yarn build:fe",
       "copy:fe": "cd back-end && yarn copy:fe",
       "build:be": "cd back-end && yarn build",
       "build": "yarn prebuild:be && yarn build:fe && yarn copy:fe && yarn build:be",
