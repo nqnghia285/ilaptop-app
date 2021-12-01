@@ -10,7 +10,7 @@
       "build:fe": "cd ../front-end && rm -rf build && yarn build",
       "build:fe:copy": "cd ../front-end && rm -rf build && yarn build && rm -rf ../back-end/public && cp -a build/* ../back-end/public",
       "build": "nest build",
-      "copy:fe": "rm -rf public && cp -a ../front-end/build/* public",
+      "copy:fe": "rm -rf public/* && cp -a ../front-end/build/* public",
       "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
       "start": "nest start",
       "start:dev:g": "yarn generate && nest start --watch",
