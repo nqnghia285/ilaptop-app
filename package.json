@@ -5,14 +5,19 @@
    "author": "nghia <nqnghia285@gmail.com>",
    "license": "MIT",
    "scripts": {
-      "heroku-prebuild": "sh scripts/heroku-prebuild.sh",
-      "deploy": "sh ./deploy.sh",
-      "prebuild:be": "cd back-end && yarn migrate:deploy && yarn generate && yarn copy:.prisma:to:fe",
-      "build:fe": "cd back-end && yarn build:fe && cd ../back-end && yarn copy:fe",
-      "build:be": "cd back-end && yarn build",
-      "build": "yarn prebuild:be && yarn build:fe && yarn build:be",
-      "start": "cd back-end && yarn start",
-      "git": "sh git-push.sh"
+      "preinstall": "echo preinstall",
+      "install": "echo install",
+      "postinstall": "echo postinstall",
+      "heroku-prebuild": "echo heroku-prebuild",
+      "build": "echo build",
+      "heroku-postbuild": "echo heroku-postbuild",
+      "heroku-cleanup": "echo heroku-cleanup",
+      "deploy": "sh scripts/deploy.sh",
+      "prebuild:be": "sh scripts/prebuild-be.sh",
+      "build:fe": "sh scripts/build-fe.sh",
+      "build:be": "sh scripts/build-be.sh",
+      "start": "echo start",
+      "git": "sh scripts/git-push.sh"
    },
    "engines": {
       "node": "16.x",
