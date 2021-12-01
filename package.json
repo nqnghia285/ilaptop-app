@@ -9,8 +9,9 @@
       "deploy": "sh ./deploy.sh",
       "prebuild:be": "cd back-end && yarn migrate:deploy && yarn generate && yarn copy:.prisma:to:fe",
       "build:fe": "cd back-end && yarn build:fe:copy",
+      "copy:fe": "cd back-end && yarn copy:fe",
       "build:be": "cd back-end && yarn build",
-      "build": "yarn prebuild:be && yarn build:fe && yarn build:be",
+      "build": "yarn prebuild:be && yarn build:fe && yarn copy:fe && yarn build:be",
       "start": "cd back-end && yarn start",
       "git": "sh git-push.sh"
    },
