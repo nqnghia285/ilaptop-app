@@ -37,6 +37,5 @@ lerna-debug.log*
 # Local ignore something
 .env
 # /src/prisma/data
-yarn.lock
 /public
 /src/graphql/schema.gql

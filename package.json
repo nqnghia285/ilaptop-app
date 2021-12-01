@@ -5,7 +5,7 @@
    "author": "nghia <nqnghia285@gmail.com>",
    "license": "MIT",
    "scripts": {
-      "heroku-prebuild": "cd front-end && yarn install && cd ../back-end && yarn install",
+      "heroku-prebuild": "cd front-end && yarn install --prod=false && cd ../back-end && yarn install --prod=false",
       "deploy": "sh ./deploy.sh",
       "prebuild:be": "cd back-end && yarn migrate:deploy && yarn generate && yarn copy:.prisma:to:fe",
       "build:fe": "yarn build:fe:copy",
