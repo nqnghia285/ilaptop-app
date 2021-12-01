@@ -33,7 +33,7 @@ export class UserOrderByWithRelationInput {
   @TypeGraphQL.Field(_type => PostOrderByRelationAggregateInput, {
     nullable: true
   })
-  Post?: PostOrderByRelationAggregateInput | undefined;
+  posts?: PostOrderByRelationAggregateInput | undefined;
 
   @TypeGraphQL.Field(_type => SortOrder, {
     nullable: true

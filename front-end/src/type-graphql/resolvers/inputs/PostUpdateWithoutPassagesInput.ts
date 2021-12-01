@@ -5,7 +5,7 @@ import { DecimalJSScalar } from "../../scalars";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { LaptopUpdateManyWithoutPostsInput } from "../inputs/LaptopUpdateManyWithoutPostsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { UserUpdateOneRequiredWithoutPostInput } from "../inputs/UserUpdateOneRequiredWithoutPostInput";
+import { UserUpdateOneRequiredWithoutPostsInput } from "../inputs/UserUpdateOneRequiredWithoutPostsInput";
 
 @TypeGraphQL.InputType("PostUpdateWithoutPassagesInput", {
   isAbstract: true
@@ -31,8 +31,8 @@ export class PostUpdateWithoutPassagesInput {
   })
   laptops?: LaptopUpdateManyWithoutPostsInput | undefined;
 
-  @TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutPostInput, {
+  @TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutPostsInput, {
     nullable: true
   })
-  author?: UserUpdateOneRequiredWithoutPostInput | undefined;
+  author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
 }

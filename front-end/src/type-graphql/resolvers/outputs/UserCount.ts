@@ -10,5 +10,5 @@ export class UserCount {
   @TypeGraphQL.Field(_type => TypeGraphQL.Int, {
     nullable: false
   })
-  Post!: number;
+  posts!: number;
 }

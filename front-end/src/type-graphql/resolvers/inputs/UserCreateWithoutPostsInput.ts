@@ -5,10 +5,10 @@ import { DecimalJSScalar } from "../../scalars";
 import { PersonCreateNestedOneWithoutUserInput } from "../inputs/PersonCreateNestedOneWithoutUserInput";
 import { Role } from "../../enums/Role";
 
-@TypeGraphQL.InputType("UserCreateWithoutPostInput", {
+@TypeGraphQL.InputType("UserCreateWithoutPostsInput", {
   isAbstract: true
 })
-export class UserCreateWithoutPostInput {
+export class UserCreateWithoutPostsInput {
   @TypeGraphQL.Field(_type => String, {
     nullable: false
   })

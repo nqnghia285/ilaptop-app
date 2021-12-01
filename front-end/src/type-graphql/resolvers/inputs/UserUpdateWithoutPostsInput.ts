@@ -7,10 +7,10 @@ import { EnumRoleFieldUpdateOperationsInput } from "../inputs/EnumRoleFieldUpdat
 import { PersonUpdateOneRequiredWithoutUserInput } from "../inputs/PersonUpdateOneRequiredWithoutUserInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 
-@TypeGraphQL.InputType("UserUpdateWithoutPostInput", {
+@TypeGraphQL.InputType("UserUpdateWithoutPostsInput", {
   isAbstract: true
 })
-export class UserUpdateWithoutPostInput {
+export class UserUpdateWithoutPostsInput {
   @TypeGraphQL.Field(_type => StringFieldUpdateOperationsInput, {
     nullable: true
   })

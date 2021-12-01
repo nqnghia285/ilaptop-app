@@ -25,7 +25,7 @@ export class User {
   })
   role!: "ADMIN" | "STAFF";
 
-  Post?: Post[];
+  posts?: Post[];
 
   @TypeGraphQL.Field(_type => Date, {
     nullable: false

@@ -6,7 +6,7 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { LaptopUpdateManyWithoutPostsInput } from "../inputs/LaptopUpdateManyWithoutPostsInput";
 import { PassageUpdateManyWithoutPostInput } from "../inputs/PassageUpdateManyWithoutPostInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { UserUpdateOneRequiredWithoutPostInput } from "../inputs/UserUpdateOneRequiredWithoutPostInput";
+import { UserUpdateOneRequiredWithoutPostsInput } from "../inputs/UserUpdateOneRequiredWithoutPostsInput";
 
 @TypeGraphQL.InputType("PostUpdateInput", {
   isAbstract: true
@@ -37,8 +37,8 @@ export class PostUpdateInput {
   })
   laptops?: LaptopUpdateManyWithoutPostsInput | undefined;
 
-  @TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutPostInput, {
+  @TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutPostsInput, {
     nullable: true
   })
-  author?: UserUpdateOneRequiredWithoutPostInput | undefined;
+  author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
 }

@@ -50,7 +50,7 @@ export class UserWhereInput {
   @TypeGraphQL.Field(_type => PostListRelationFilter, {
     nullable: true
   })
-  Post?: PostListRelationFilter | undefined;
+  posts?: PostListRelationFilter | undefined;
 
   @TypeGraphQL.Field(_type => DateTimeFilter, {
     nullable: true
